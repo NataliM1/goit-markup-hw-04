@@ -79,7 +79,12 @@ ul {
   font-weight: 500;
   line-height: 1.1428;
   text-decoration: none;
-  margin-left: 10px;
+  display: flex;
+}
+
+.header-link-cont {
+  padding-right: 10px;
+  vertical-align: middle;
 }
 
 .header-link-contact:hover,
@@ -117,13 +122,13 @@ ul {
 }
 
 .header-icons-list {
-  fill: var( --color-primary);
+  fill: var(--color-primary);
 }
 
 .header-icons-list:hover,
 .header-icons-list:focus {
   color: var(--color-inverted);
-  fill: var(  --color-inverted);
+  fill: var(--color-inverted);
   cursor: pointer;
 }
 
@@ -282,16 +287,16 @@ img {
 .persons-text {
   padding: 30px 0;
   text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .persons-section-soc-list {
   display: flex;
   column-gap: 10px;
   align-items: center;
-  margin-left: 32px;
+  margin-top: 16px;
 }
-
-
 
 .persons-section-soc-img {
   display: flex;
@@ -301,19 +306,14 @@ img {
   height: 44px;
   fill: rgba(175, 177, 184, 1);
   border-radius: 50%;
-  margin-top: 16px;
 }
- 
+
 .persons-section-soc-img:hover,
 .persons-section-soc-img:focus {
   cursor: pointer;
-  background-color:var(--color-inverted) ;
+  background-color: var(--color-inverted);
+  fill: var(--color-accent);
 }
-
-.persons-section-soc-img:hover.persons-section-soc-img {
-  fill: var( --color-accent);
-}
-
 
 .client-section {
   display: flex;
@@ -344,7 +344,6 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  margin-bottom: 30px;
   fill: rgba(175, 177, 184, 1);
   border-radius: 4px;
   border: 1px solid rgba(175, 177, 184, 1);
@@ -359,11 +358,8 @@ img {
 .client-section-container-img:hover,
 .client-section-container-img:focus {
   cursor: pointer;
-  border: 1px solid rgba(33, 150, 243, 1);
-}
-
-.client-section-container:hover .client-section-container-img {
-  fill: rgba(33, 150, 243, 1);
+  border: 1px solid var(--color-inverted);
+  fill: var(--color-inverted);
 }
 
 .footer {
@@ -431,15 +427,11 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-links-twit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  fill: rgba(255, 255, 255, 1);
-  border-radius: 50%;
-  background-color: rgba(33, 150, 243, 1);
+.social-links:hover,
+.social-links:focus {
+  cursor: pointer;
+  background-color: var(--color-inverted);
+  fill: var(--color-accent);
 }
 
 .footer-link-contact {
@@ -515,6 +507,9 @@ img {
   cursor: pointer;
   background-color: var(--color-inverted);
   color: var(--color-accent);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 01, 0.1);
+  -moz-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button-menu {
